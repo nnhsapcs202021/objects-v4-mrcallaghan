@@ -77,12 +77,28 @@ public class TurtleDemo7th
         World pacificOcean;
         
         
+        /*
+         * This is a compile-time error. (This code doesn't even compile.)
+         * 
+         *  These are often called syntax errors.
+         */
+        //crush.forwrd(50);  // word is misspelled
         
+        /*
+         * This is a run-time error. (This code compiles and runs, but generates an exception.
+         *      In most cases, the program crashes.)
+         */
+        //crush.forward(1 / 0);
         
-        
-        
-        
-        
+        /*
+         * This is also a run-time error. (This code compiles and runs, but it doesn't produce
+         *      the expected output.)
+         *      
+         *  More specifically, this is a logical error as the turtle turns right instead of left.
+         */
+        // turn left and move forward 50
+        crush.turn(90);  // turn right
+        crush.forward(50);
         
         
         
