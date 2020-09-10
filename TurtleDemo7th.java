@@ -43,5 +43,50 @@ public class TurtleDemo7th
         
         // this is a single-line comment (like # python)
         
+        /*
+         * Identifiers are any combination of:
+         *  letters
+         *  digits (but not as first character)
+         *  underscores (_)
+         *  dollar signs  ($)
+         *  
+         *  These are the various identifiers;
+         */
+        
+        int y, x2, x_y, x$;
+        
+        // This is not a valid identifier:
+        //int 2y;
+        
+        /*
+         * Identifiers are case sensitive (case matters).
+         * 
+         * These are different:
+         */
+        Turtle squirt, SQUIRT, sQUirT;
+        
+        /*
+         * By convention, constant values are all uppercase. Use an underscore between words.
+         */
+        int SPEED_OF_LIGHT = 300000000; // meters/second
+        
+        /*
+         * By convention, most identifiers start with a lowercase letter.
+         *  Subsequent words start with an uppercase letter (CamalCase)
+         */
+        World pacificOcean;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
+    
+    
 }
