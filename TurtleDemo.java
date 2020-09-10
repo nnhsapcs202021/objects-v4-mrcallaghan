@@ -43,5 +43,55 @@ public class TurtleDemo
         
         // this is a single-line comment (like # python)
         
+        /*
+         * Identifiers are any combination of:
+         *    letters
+         *    digits (but not first character)
+         *    underscores
+         *    dollar signs
+         *    
+         *    These are various examples of identifiers
+         */
+        int y, x2, x_y, x$;
+        
+        //This is not valid:
+        //int 2y;
+        
+        /*
+         * Identifiers are case sensitive (case matters).
+         * 
+         * These are three different identifiers:
+         */
+        Turtle squirt, SQUIRT, sQUirt;
+        
+        /*
+         * By convention, constants are all uppercase.  Use an underscore to separate words.
+         * 
+         */
+        int SPEED_OF_LIGHT = 300000000; // m/s
+        
+        /*
+         * By convention, most other identifiers start with a lowercase letter.
+         *   Subsequent words start with an uppercase letter. (CamalCase)
+         */
+        World pacificOcean;
+        
+        
+        // this is a compile-time error (this code does not even compile)  AKA syntax errors.
+        //crush.forwrd(50);
+        
+        /*
+         * run-time error. (this code compiles and runs, but it generates an exception.  
+         *    In most cases, the program will crash.
+         */
+        //crush.forward(1/0);
+        
+        /*
+         * Another type of run-time error. (code compiles and runs, but doesn't produce the expected output)
+         */
+        // turn left and move forward, but it turns the wrong way
+        crush.turn(90);
+        crush.forward(50);
+        
     }
 }
