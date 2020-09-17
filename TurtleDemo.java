@@ -14,7 +14,7 @@ import java.awt.Color;
 
 public class TurtleDemo
 {
-    
+
     /*
      * A class contains methods.
      * 
@@ -29,7 +29,7 @@ public class TurtleDemo
         crush.setPenColor(Color.ORANGE);  // run methods on the turtle object
         crush.penDown();
         crush.forward(50);
-        
+
         /*
          * A method contains statements.
          * 
@@ -40,9 +40,9 @@ public class TurtleDemo
          * When invoking a method, arguments are passed in parentheses (e.g., 50).
          */
         crush.forward(50);    // move crush forward 50 pixels
-        
+
         // this is a single-line comment (like # python)
-        
+
         /*
          * Identifiers are any combination of:
          *    letters
@@ -53,45 +53,85 @@ public class TurtleDemo
          *    These are various examples of identifiers
          */
         int y, x2, x_y, x$;
-        
+
         //This is not valid:
         //int 2y;
-        
+
         /*
          * Identifiers are case sensitive (case matters).
          * 
          * These are three different identifiers:
          */
         Turtle squirt, SQUIRT, sQUirt;
-        
+
         /*
          * By convention, constants are all uppercase.  Use an underscore to separate words.
          * 
          */
         int SPEED_OF_LIGHT = 300000000; // m/s
-        
+
         /*
          * By convention, most other identifiers start with a lowercase letter.
          *   Subsequent words start with an uppercase letter. (CamalCase)
          */
         World pacificOcean;
-        
-        
+
         // this is a compile-time error (this code does not even compile)  AKA syntax errors.
         //crush.forwrd(50);
-        
+
         /*
          * run-time error. (this code compiles and runs, but it generates an exception.  
          *    In most cases, the program will crash.
          */
         //crush.forward(1/0);
-        
+
         /*
          * Another type of run-time error. (code compiles and runs, but doesn't produce the expected output)
          */
         // turn left and move forward, but it turns the wrong way
         crush.turn(90);
         crush.forward(50);
-        
+
     }
+
+    public static void drawLine()
+    {
+        /*
+         * Objects are entities in a program.
+         *  Objects have attributes.
+         *  Objects are manipulated by invoking methods.
+         *  
+         *  ocean and crush are variables that are referencing objects
+         *  
+         *  Classes describe a collection of objects.
+         *      All objects of a class have the came behavior (methods),
+         *        and they have the same type of attributes (but the may have different values).
+         *        
+         *  World and Turtle are classes.
+         */
+        World ocean = new World();
+        
+        /*
+         * We use the new operator to contruct (create, instantiate) an object.
+         * 
+         * The class of the object is spectified immediately after the new operator (e.g., Turtle).
+         * 
+         * If we need to pass additional information to construct the object, arguments are
+         *      specified in parentheses after the class (e.g., ocean).
+         * 
+         */
+        Turtle crush = new Turtle(ocean);
+        
+        /*
+         * Variables store value to be used later.
+         *  Variables have a type (e.g., int), a name (e.g. width), and a value (e.g. 20).
+         */
+        int width;  //declaring a variable
+        width = 20; // assigning a value to a variable
+        
+        int width2 = 100;  // declaring and assigning in one statement
+
+    
+    }
+
 }
