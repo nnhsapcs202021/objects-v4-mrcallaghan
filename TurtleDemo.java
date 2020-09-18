@@ -130,7 +130,47 @@ public class TurtleDemo
         width = 20; // assigning a value to a variable
         
         int width2 = 100;  // declaring and assigning in one statement
-
+        
+        /*
+         * Java has several primitive data types
+         *      boolean holds a value of true or false
+         *      int holds an integer number
+         *      double holds a real number (floating point)
+         *      char holds a single character
+         */
+        
+        // here is a boolean
+        boolean isSummer = true;
+        
+        // here is a double
+        double salesTaxRate = 0.075;
+        
+        // here is a char
+        char letter = 'c';
+        
+        /*
+         * When invoking methods, we use the dot operator (i.e., '.') to invoke a method on an object.
+         * 
+         * Some methods take no arguments, but we still have parentheses (e.g., penDown).
+         * 
+         * Some methods take one or more arugments (e.g., forward).
+         * 
+         * Mutator methods modify the state (i.e., values of attributes) of the object.
+         *      penDown, forward, setPenColor are all mutator methods.
+         * 
+         */
+        crush.penDown();
+        crush.forward(25);
+        crush.setPenColor(Color.RED);
+        crush.forward(50);
+        
+        /*
+         * Accessor method returns the value of an attribute of the object.
+         *      The state of the object does not change.
+         *      
+         *  getPenWidth is an accessor method.
+         */
+        int penWidth = crush.getPenWidth();
     
     }
 
