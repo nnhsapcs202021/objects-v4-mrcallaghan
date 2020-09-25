@@ -11,6 +11,7 @@
  * @version 09 September 2020
  */
 import java.awt.Color;
+import java.util.Random;
 
 public class TurtleDemo7th
 {
