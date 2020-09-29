@@ -5,7 +5,7 @@
  * 
  * The source file name must match the class name.
  * 
- * By convention, class names start with an uppercase letter.
+ * By convention, class names start with an uppercase letter. //
  *
  * @author mcallaghan
  * @version 09 September 2020
